@@ -1,0 +1,1048 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+  height: 100%;
+  background: url(../vue/bg.jpg);
+  /*background-color: #D6F4C4;*/
+  color: #270000;
+  color: rgba(44, 0, 0, 0.96);
+  font-family: Georgia, serif;
+  line-height: 1.5;
+  margin: 0px;
+  padding: 0px;
+  -webkit-text-size-adjust: 100%;
+}
+
+header {
+	margin-bottom: 80px;
+	z-index: 0;
+	background: url(../vue/bg.jpg);
+	display:block;
+}
+
+main {
+	height: auto;
+	margin: 0 auto -170px;
+	min-height: 100%;
+	padding: 0 0 170px;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+
+
+/* *****  CONTENTS ***** */
+.contents p, .contents li {
+	font-size: 150%;
+}
+
+.contents h2, .contents h2, .contents h4{
+	color: #630;
+    color: rgba(102, 51, 0, 0.9);
+	font-weight: normal;
+	line-height: 1.25;
+	border-bottom-style: solid;
+	border-bottom-color: #efead1;
+	border-bottom-color: rgba(102, 51, 0, 0.1);
+	word-wrap: break-word;
+}
+
+#divlogo {
+	position: absolute;
+	width: 6%;
+	margin-left: 2%;
+	margin-top: 0;
+	z-index: 2000;
+}
+
+#divlogo img{
+	width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+
+	#divlogo {
+		display: none;
+	}
+
+}
+
+/* *****  ACCUEIL, CONTACT ***** */
+#accueil, #apropos, #graphes, #archives, #contact, #statistiques, #faq {
+  background: url(../vue/bggreen.jpg);
+  border: 10px solid #a6a6a6;
+  border-radius: 40px;
+  border-style: outset;
+}
+
+#archives, #statistiques {
+  padding: 20px 20px 20px 20px;
+}
+
+#accueil .info, #contact .info, #faq .info {
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.0125);
+  margin-bottom: 20px;
+  padding: 1em 1em 1em 1em;
+  border: 0.1875em double rgba(0, 0, 0, 0.05);
+  -webkit-border-radius: 0.125em;
+  border-radius: 0.125em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#accueil .info li, #contact .info li {
+  margin: 0 0 5px 10px;
+}
+
+#accueil .fa-info{
+	color:  #ffffff;
+	background-color:  #00aced;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 35px;
+}
+
+#accueil .fa-question-circle{
+	color:  #ffffff;
+	background-color:  #5EB311;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 35px;
+}
+#accueil .fa-envelope, #contact .fa-envelope{
+	color:  #ffffff;
+	background-color:  #F2C231;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 35px;
+}
+
+/* *****  NAVBAR ***** */
+#menu .navbar {
+  background: none;
+  border: 0;
+}
+
+#navComplete {
+	background-color: #BB090D;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-bottomright: 10px;
+	border-bottom-right-radius:10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-bottomleft: 10px;
+	border-bottom-left-radius:10px;
+	box-shadow: 4px 3px 4px #000;
+}
+
+#navfull a{
+	color: #D6F4C4;
+	font-weight: normal;
+	font-size: 120%;
+	line-height: 1.25;
+	word-wrap: break-word;
+}
+
+.firstul li.here a:link, .firstul li.here a:visited, .secondul li.here:not(:last-child) a:link, .secondul li.here:not(:last-child) a:visited {
+	background-color: #8F070B;
+}
+
+.secondul li.here:last-child a:link, .secondul li.here:last-child a:visited {
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-topright: 10px;
+	-moz-border-bottomright: 10px;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+	background-color: #8F070B;
+}
+
+#navfull li:hover {
+	background-color: #8F070B;
+	transition-duration: 0.4s;
+}
+
+ul.secondul li:last-child:hover {
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-bottomright: 10px;
+	border-bottom-right-radius:10px;
+	background-color: #8F070B;
+	transition-duration: 0.4s;
+}
+
+@media screen and (min-width: 880px) {
+	
+	#navfull li:hover a {
+		transform: scale(1.15);
+		-ms-transition: all 0.3s ease-out 0.1s;
+		-ms-transform:scale(1.15); /* IE 9 */
+		-moz-transition: all 0.3s ease-out 0.1s;
+		-moz-transform:scale(1.15); /* Firefox */
+		-webkit-transition: all 0.3s ease-out 0.1s;
+		-webkit-transform:scale(1.15); /* Safari and Chrome */
+		-o-transition: all 0.3s ease-out 0.1s;
+		-o-transform:scale(1.15); /* Opera */
+		transition: all 0.3s ease-out 0.1s;
+	}
+	.graphes::after {
+		content: " |";
+	}
+	.archives::after {
+		content: " |";
+	}
+}
+
+#menu .navbar-brand {
+  padding: 0px;
+}
+#menu .navbar-brand>img {
+  height: 100%;
+  padding: 5px;
+  width: auto;
+}
+
+@media screen and (max-width: 320px) {
+	
+	#menu .navbar-brand>img {
+		height: 95%;
+		padding: 5px;
+		width: auto;
+	}
+}
+
+#menu .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+#menu .dropdown-menu {
+	background-color: #8F070B;
+	border-radius : 10px;
+}
+
+/* *****  NAVBAR-SIDE ***** */
+
+:focus {
+  outline: none;
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+/* 
+    Sometimes the sub menus get too large for the page and prevent the menu from scrolling, limiting functionality
+    A quick fix is to change .side-menu to 
+
+    -> position:absolute
+    
+    and uncomment the code below.
+    You also need to uncomment 
+    
+    -> <div class="absolute-wrapper"> </div> in the html file
+
+    you also need to tweek the animation. Just uncomment the code in that section
+    --------------------------------------------------------------------------------------------------------------------
+    If you want to make it really neat i suggest you look into an alternative like http://areaaperta.com/nicescroll/
+    This will allow the menu to say fixed on body scoll and scoll on the side bar if it get to large
+*/
+/*.absolute-wrapper{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #f8f8f8;
+    border-right: 1px solid #e7e7e7;
+}*/
+
+.side-menu {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background: url(../vue/bggreen.jpg);
+}
+.side-menu .navbar {
+  border: none;
+  background-color: transparent;
+}
+.side-menu .navbar-header {
+  width: 100%;
+  border-bottom: 2px solid #e7e7e7;
+  background: url(../vue/bggreen.jpg);
+}
+.side-menu .navbar-header .brand-name-wrapper a{
+	margin-left: 90px;
+	font-size: 20px;
+}
+.side-menu .navbar-nav .active a {
+  background-color: transparent;
+  margin-right: -1px;
+  border-right: 5px solid #e7e7e7;
+}
+.side-menu .navbar-nav li {
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #e7e7e7;
+}
+.side-menu .navbar-nav li a {
+  padding: 15px;
+}
+.side-menu .navbar-nav li a .fa {
+  padding-right: 10px;
+}
+.side-menu #dropdown {
+  border: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+.side-menu #dropdown .caret {
+  float: right;
+  margin: 9px 5px 0;
+}
+.side-menu #dropdown .indicator {
+  float: right;
+}
+.side-menu #dropdown > a {
+  border-bottom: 1px solid #e7e7e7;
+}
+.side-menu #dropdown .panel-body {
+  padding: 0;
+  background-color: transparent;
+}
+.side-menu #dropdown .panel-body .navbar-nav {
+  width: 100%;
+}
+.side-menu #dropdown .panel-body .navbar-nav li {
+  padding-left: 15px;
+  border-bottom: 1px solid #e7e7e7;
+}
+.side-menu #dropdown .panel-body .navbar-nav li:last-child {
+  border-bottom: none;
+}
+.side-menu #dropdown .panel-body .panel > a {
+  margin-left: -20px;
+  padding-left: 35px;
+}
+.side-menu #dropdown .panel-body .panel-body {
+  margin-left: -15px;
+}
+.side-menu #dropdown .panel-body .panel-body li {
+  padding-left: 30px;
+}
+.side-menu #dropdown .panel-body .panel-body li:last-child {
+  border-bottom: 1px solid #e7e7e7;
+}
+.side-menu .brand-name-wrapper {
+  min-height: 50px;
+}
+.side-menu .brand-name-wrapper .navbar-brand {
+  display: block;
+}
+/* Main body section */
+.side-body {
+  margin-left: 300px;
+}
+/* small screen */
+@media (max-width: 768px) {
+  .side-menu {
+    position: relative;
+    width: 100%;
+    height: 0;
+    border-right: 0;
+  }
+  .side-menu .brand-name-wrapper .navbar-brand {
+    display: inline-block;
+  }
+  .side-menu .navbar-header .brand-name-wrapper a{
+	margin-left: 0px;
+  }
+  /* Slide in animation */
+  @-moz-keyframes slidein {
+    0% {
+      left: -300px;
+    }
+    100% {
+      left: 10px;
+    }
+  }
+  @-webkit-keyframes slidein {
+    0% {
+      left: -300px;
+    }
+    100% {
+      left: 10px;
+    }
+  }
+  @keyframes slidein {
+    0% {
+      left: -300px;
+    }
+    100% {
+      left: 10px;
+    }
+  }
+  @-moz-keyframes slideout {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -300px;
+    }
+  }
+  @-webkit-keyframes slideout {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -300px;
+    }
+  }
+  @keyframes slideout {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -300px;
+    }
+  }
+  /* Slide side menu*/
+  /* Add .absolute-wrapper.slide-in for scrollable menu -> see top comment */
+  .side-menu-container > .navbar-nav.slide-in {
+    -moz-animation: slidein 300ms forwards;
+    -o-animation: slidein 300ms forwards;
+    -webkit-animation: slidein 300ms forwards;
+    animation: slidein 300ms forwards;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  .side-menu-container > .navbar-nav {
+    /* Add position:absolute for scrollable menu -> see top comment */
+    position: fixed;
+    left: -300px;
+    width: 300px;
+	margin-top: 70px;
+    height: 100%;
+    border-right: 1px solid #e7e7e7;
+    background-color: #f8f8f8;
+    -moz-animation: slideout 300ms forwards;
+    -o-animation: slideout 300ms forwards;
+    -webkit-animation: slideout 300ms forwards;
+    animation: slideout 300ms forwards;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+	background: url(../vue/bggreen.jpg);
+  }
+  /* Uncomment for scrollable menu -> see top comment */
+  /*.absolute-wrapper{
+        width:285px;
+        -moz-animation: slideout 300ms forwards;
+        -o-animation: slideout 300ms forwards;
+        -webkit-animation: slideout 300ms forwards;
+        animation: slideout 300ms forwards;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }*/
+  @-moz-keyframes bodyslidein {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 300px;
+    }
+  }
+  @-webkit-keyframes bodyslidein {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 300px;
+    }
+  }
+  @keyframes bodyslidein {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 300px;
+    }
+  }
+  @-moz-keyframes bodyslideout {
+    0% {
+      left: 300px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  @-webkit-keyframes bodyslideout {
+    0% {
+      left: 300px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  @keyframes bodyslideout {
+    0% {
+      left: 300px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  /* Slide side body*/
+  .side-body {
+    margin-left: 5px;
+    margin-top: 70px;
+    position: relative;
+    -moz-animation: bodyslideout 300ms forwards;
+    -o-animation: bodyslideout 300ms forwards;
+    -webkit-animation: bodyslideout 300ms forwards;
+    animation: bodyslideout 300ms forwards;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  .body-slide-in {
+    -moz-animation: bodyslidein 300ms forwards;
+    -o-animation: bodyslidein 300ms forwards;
+    -webkit-animation: bodyslidein 300ms forwards;
+    animation: bodyslidein 300ms forwards;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  /* Hamburger */
+  #carte .navbar-toggle {
+    border: 2px solid #FFFFFF;
+    float: left;
+    margin: 1.2% 0 0 1%;
+    border-radius: 10px;
+    background-color: transparent;
+  }
+  #carte .navbar-header {
+    /* this is probably redundant */
+    position: fixed;
+    z-index: 3;
+    background-color: #f8f8f8;
+	top: 60px;
+  }
+  /* Dropdown tweek */
+  #carte #dropdown .panel-body .navbar-nav {
+    margin: 0;
+  }
+}
+
+/* *****  FOOTER ***** */
+/*footer{
+	position: absolute;
+	bottom: 0;
+}*/
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	height: 170px;
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 13px 50px;
+	margin-top: 10px;
+}
+
+@media screen and (max-width:880px){
+	.footer-distributed {height: 330px;}
+	main {margin: 0 auto -330px; padding: 0 0 330px;}
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 2px;
+
+	font-size: 20px;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+.logo-piedpage{
+	max-width: 8%;
+}
+
+@media screen and (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+		bottom: 0;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 58px;
+  height: 24px;
+  left: 180px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 10px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* LEGENDE CARTE */
+.legendeinfo {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.legendeinfo h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+.legendestyle {
+  line-height: 18px;
+  color: #555;
+}
+#closed{
+  background-color:#A9A9A9;
+  width:40px;
+  height: 15px;
+  display: inline-block;
+}
+#low{
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #FF0000 , #FF7B00); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #FF0000, #FF7B00); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #FF0000, #FF7B00); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #FF0000 , #FF7B00); /* Standard syntax */
+  width:40px;
+  height: 15px;
+  display: inline-block;
+}
+#medium{
+  background: yellow; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #FFAF00 , #B0FF00); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #FFAF00, #B0FF00); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #FFAF00, #B0FF00); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #FFAF00 , #B0FF00); /* Standard syntax */
+  width:40px;
+  height: 15px;
+  display: inline-block;
+}
+#high{
+  background: green; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #7CFF00 , #00FF00); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #7CFF00, #00FF00); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #7CFF00, #00FF00); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #7CFF00 , #00FF00); /* Standard syntax */
+  width:40px;
+  height: 15px;
+  display: inline-block;
+}
+#full{
+  background: #005000;
+  width:40px;
+  height: 15px;
+  display: inline-block;
+}
+
+
+@media screen and (min-width: 650px){
+
+    #trajmoyen {
+      float : left;
+      padding: 12px 0px 0px 40px;
+      color: #630;
+      color: rgba(102, 51, 0, 0.9);
+    font-weight: normal;
+    line-height: 1.25;
+    border-bottom-style: solid;
+    border-bottom-color: #efead1;
+    border-bottom-color: rgba(102, 51, 0, 0.1);
+    word-wrap: break-word;
+    }
+
+    #top10 {
+      float : right;
+      padding: 12px 60px 0px 0px;
+      color: #630;
+      color: rgba(102, 51, 0, 0.9);
+    font-weight: normal;
+    line-height: 1.25;
+    border-bottom-style: solid;
+    border-bottom-color: #efead1;
+    border-bottom-color: rgba(102, 51, 0, 0.1);
+    word-wrap: break-word;
+    }
+
+    #chartTrajet {
+      height: 300px;
+      width: 50%;
+     
+      display: inline-block;
+      float: left;
+  }
+  
+  #charttop10 {
+     
+      height: 300px;
+      width: 35%;
+     
+      display: inline-block;
+              float: right;
+  }
+
+  #searchStation {
+    width:40%;
+    display: inline;
+    float : right;
+  }
+  #graphes input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../vue/search_icon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    display: inline;
+    float : right;
+    
+    
+  }
+
+  #graphes input[type=text]:focus {
+    width: 100%;
+  }
+
+  #selectArrond {
+    
+    border: none;
+    border-radius: 4px;
+
+   display: inline-block;
+    
+  }
+
+  #selectStation {
+    
+      border: none;
+      border-radius: 4px;
+      display:  inline-block;
+      
+  }
+
+  #buttonMoyenne {
+    border: none;
+    border-radius: 4px;
+    display:  inline-block;
+  }
+}
+
+@media screen and (max-width: 650px){
+  
+      #trajmoyen {
+        
+        padding: 12px 0px 0px 40px;
+        color: #630;
+        color: rgba(102, 51, 0, 0.9);
+      font-weight: normal;
+      line-height: 1.25;
+      border-bottom-style: solid;
+      border-bottom-color: #efead1;
+      border-bottom-color: rgba(102, 51, 0, 0.1);
+      word-wrap: break-word;
+      }
+  
+      #top10 {
+       
+        padding: 50px 60px 0px 0px;
+        color: #630;
+        color: rgba(102, 51, 0, 0.9);
+      font-weight: normal;
+      line-height: 1.25;
+      border-bottom-style: solid;
+      border-bottom-color: #efead1;
+      border-bottom-color: rgba(102, 51, 0, 0.1);
+      word-wrap: break-word;
+      }
+  
+
+      #chartTrajet {
+        height: 300px;
+        width: 100%;
+       
+        display: inline-block;
+       
+    }
+    
+    #charttop10 {
+       
+        height: 300px;
+        width: 75%;
+       
+        display: inline-block;
+      
+    }
+
+    #searchStation {
+      width:75%;
+      display: inline;
+      float : left;
+      margin-left: 12px;
+      
+    }
+
+    #graphes input[type=text] {
+      width: 130px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-image: url('../vue/search_icon.png');
+      background-position: 10px 10px; 
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+      display: inline;
+      float : left;
+      
+      
+  }
+
+  #graphes input[type=text]:focus {
+      width: 100%;
+  }
+
+  #selectArrond {
+    
+    border: none;
+    border-radius: 4px;
+
+   display: inline-block;
+   margin-bottom: 6px;
+      
+  }
+
+  #selectStation {
+    
+      border: none;
+      border-radius: 4px;
+      display:  inline-block;
+      margin-bottom: 6px;
+  }
+
+  #buttonMoyenne {
+    border: none;
+    border-radius: 4px;
+    display:  inline-block;
+    margin-bottom: 6px;
+    margin-left: 12px;
+  }
+}

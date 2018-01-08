@@ -24,5 +24,5 @@ Téléchargez l'archive ou via git : git clone https://forge.univ-lyon1.fr/p1400
 
 * **Florentin Besset 11400223** - *Développeur*
 * **Luc Gombert 11508388** - *Développeur*
-* **Florentin Besset 11507967** - *Développeur*
+* **Mathieu Zenner 11507967** - *Développeur*
 * **Rémy Cazabet** - *Encadrant de projet*

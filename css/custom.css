@@ -74,7 +74,7 @@ main {
 
 }
 
-/* *****  ACCUEIL, CONTACT ***** */
+/* *****  ACCUEIL, CONTACT, GRAPHES, STATS, FAQ, APROPOS, ARCHIVES ***** */
 #accueil, #apropos, #graphes, #archives, #contact, #statistiques, #faq {
   background: url(../vue/bggreen.jpg);
   border: 10px solid #a6a6a6;
@@ -249,30 +249,6 @@ ul.secondul li:last-child:hover {
   margin-right: 0;
   margin-left: 0;
 }
-/* 
-    Sometimes the sub menus get too large for the page and prevent the menu from scrolling, limiting functionality
-    A quick fix is to change .side-menu to 
-
-    -> position:absolute
-    
-    and uncomment the code below.
-    You also need to uncomment 
-    
-    -> <div class="absolute-wrapper"> </div> in the html file
-
-    you also need to tweek the animation. Just uncomment the code in that section
-    --------------------------------------------------------------------------------------------------------------------
-    If you want to make it really neat i suggest you look into an alternative like http://areaaperta.com/nicescroll/
-    This will allow the menu to say fixed on body scoll and scoll on the side bar if it get to large
-*/
-/*.absolute-wrapper{
-    position: fixed;
-    width: 300px;
-    height: 100%;
-    background-color: #f8f8f8;
-    border-right: 1px solid #e7e7e7;
-}*/
-
 .side-menu {
   position: fixed;
   width: 300px;
@@ -426,7 +402,6 @@ ul.secondul li:last-child:hover {
     }
   }
   /* Slide side menu*/
-  /* Add .absolute-wrapper.slide-in for scrollable menu -> see top comment */
   .side-menu-container > .navbar-nav.slide-in {
     -moz-animation: slidein 300ms forwards;
     -o-animation: slidein 300ms forwards;
@@ -436,7 +411,6 @@ ul.secondul li:last-child:hover {
     transform-style: preserve-3d;
   }
   .side-menu-container > .navbar-nav {
-    /* Add position:absolute for scrollable menu -> see top comment */
     position: fixed;
     left: -300px;
     width: 300px;
@@ -452,16 +426,6 @@ ul.secondul li:last-child:hover {
     transform-style: preserve-3d;
 	background: url(../vue/bggreen.jpg);
   }
-  /* Uncomment for scrollable menu -> see top comment */
-  /*.absolute-wrapper{
-        width:285px;
-        -moz-animation: slideout 300ms forwards;
-        -o-animation: slideout 300ms forwards;
-        -webkit-animation: slideout 300ms forwards;
-        animation: slideout 300ms forwards;
-        -webkit-transform-style: preserve-3d;
-        transform-style: preserve-3d;
-    }*/
   @-moz-keyframes bodyslidein {
     0% {
       left: 0;
@@ -853,12 +817,12 @@ input:checked + .slider:before {
       padding: 12px 0px 0px 40px;
       color: #630;
       color: rgba(102, 51, 0, 0.9);
-    font-weight: normal;
-    line-height: 1.25;
-    border-bottom-style: solid;
-    border-bottom-color: #efead1;
-    border-bottom-color: rgba(102, 51, 0, 0.1);
-    word-wrap: break-word;
+      font-weight: normal;
+      line-height: 1.25;
+      border-bottom-style: solid;
+      border-bottom-color: #efead1;
+      border-bottom-color: rgba(102, 51, 0, 0.1);
+      word-wrap: break-word;
     }
 
     #top10 {
@@ -866,29 +830,26 @@ input:checked + .slider:before {
       padding: 12px 60px 0px 0px;
       color: #630;
       color: rgba(102, 51, 0, 0.9);
-    font-weight: normal;
-    line-height: 1.25;
-    border-bottom-style: solid;
-    border-bottom-color: #efead1;
-    border-bottom-color: rgba(102, 51, 0, 0.1);
-    word-wrap: break-word;
+      font-weight: normal;
+      line-height: 1.25;
+      border-bottom-style: solid;
+      border-bottom-color: #efead1;
+      border-bottom-color: rgba(102, 51, 0, 0.1);
+      word-wrap: break-word;
     }
 
     #chartTrajet {
       height: 300px;
       width: 50%;
-     
       display: inline-block;
       float: left;
   }
   
-  #charttop10 {
-     
-      height: 300px;
-      width: 35%;
-     
-      display: inline-block;
-              float: right;
+  #charttop10 { 
+    height: 300px;
+    width: 35%;
+    display: inline-block;
+    float: right;
   }
 
   #searchStation {
@@ -911,8 +872,6 @@ input:checked + .slider:before {
     transition: width 0.4s ease-in-out;
     display: inline;
     float : right;
-    
-    
   }
 
   #graphes input[type=text]:focus {
@@ -945,48 +904,40 @@ input:checked + .slider:before {
 
 @media screen and (max-width: 650px){
   
-      #trajmoyen {
-        
-        padding: 12px 0px 0px 40px;
-        color: #630;
-        color: rgba(102, 51, 0, 0.9);
+    #trajmoyen {
+      padding: 12px 0px 0px 40px;
+      color: #630;
+      color: rgba(102, 51, 0, 0.9);
       font-weight: normal;
       line-height: 1.25;
       border-bottom-style: solid;
       border-bottom-color: #efead1;
       border-bottom-color: rgba(102, 51, 0, 0.1);
       word-wrap: break-word;
-      }
+    }
   
-      #top10 {
-       
-        padding: 50px 60px 0px 0px;
-        color: #630;
-        color: rgba(102, 51, 0, 0.9);
+    #top10 {
+      padding: 50px 60px 0px 0px;
+      color: #630;
+      color: rgba(102, 51, 0, 0.9);
       font-weight: normal;
       line-height: 1.25;
       border-bottom-style: solid;
       border-bottom-color: #efead1;
       border-bottom-color: rgba(102, 51, 0, 0.1);
       word-wrap: break-word;
-      }
-  
+    }
 
-      #chartTrajet {
-        height: 300px;
-        width: 100%;
-       
-        display: inline-block;
-       
+    #chartTrajet {
+      height: 300px;
+      width: 100%;
+      display: inline-block;   
     }
     
     #charttop10 {
-       
-        height: 300px;
-        width: 75%;
-       
-        display: inline-block;
-      
+      height: 300px;
+      width: 75%;
+      display: inline-block;
     }
 
     #searchStation {
@@ -994,7 +945,6 @@ input:checked + .slider:before {
       display: inline;
       float : left;
       margin-left: 12px;
-      
     }
 
     #graphes input[type=text] {
@@ -1011,31 +961,25 @@ input:checked + .slider:before {
       -webkit-transition: width 0.4s ease-in-out;
       transition: width 0.4s ease-in-out;
       display: inline;
-      float : left;
-      
-      
-  }
+      float: left;
+    }
 
   #graphes input[type=text]:focus {
-      width: 100%;
+    width: 100%;
   }
 
   #selectArrond {
-    
     border: none;
     border-radius: 4px;
-
-   display: inline-block;
-   margin-bottom: 6px;
-      
+    display: inline-block;
+    margin-bottom: 6px;
   }
 
   #selectStation {
-    
-      border: none;
-      border-radius: 4px;
-      display:  inline-block;
-      margin-bottom: 6px;
+    border: none;
+    border-radius: 4px;
+    display:  inline-block;
+    margin-bottom: 6px;
   }
 
   #buttonMoyenne {
